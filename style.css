@@ -110,6 +110,7 @@ nav {
   position: absolute;
   left: 6px;
   right: 6px;
+  top: 50%;
   height: 2px;
   background: var(--ink);
   transform-origin: center;
@@ -117,19 +118,19 @@ nav {
 }
 
 .nav-toggle span:nth-child(1) {
-  top: 8px;
+  transform: translateY(-7px);
 }
 
 .nav-toggle span:nth-child(2) {
-  top: 14px;
+  transform: translateY(0);
 }
 
 .nav-toggle span:nth-child(3) {
-  top: 20px;
+  transform: translateY(7px);
 }
 
 nav.is-open .nav-toggle span:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
 }
 
 nav.is-open .nav-toggle span:nth-child(2) {
@@ -137,7 +138,7 @@ nav.is-open .nav-toggle span:nth-child(2) {
 }
 
 nav.is-open .nav-toggle span:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
 }
 
 .brand {
@@ -474,6 +475,23 @@ h2 {
 
   .quick-facts {
     padding: clamp(1.1rem, 4vw, 1.4rem);
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  .facts-grid {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .facts-grid {
+    align-items: stretch;
+  }
+
+  .fact-card {
+    margin: 0 auto;
+    width: min(100%, 360px);
   }
 }
 
@@ -614,10 +632,16 @@ h2 {
   box-shadow: 5px 5px 0 rgba(26, 23, 19, 0.18);
   display: grid;
   gap: 1.5rem;
+  overflow-wrap: anywhere;
 }
 
 .contact-card a::after {
   bottom: -6px;
+}
+
+.contact-lines a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-lines {
