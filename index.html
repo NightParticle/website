@@ -1,16 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Östberg</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-inner">
+        <div class="brand">
+          <strong>Adam Östberg</strong>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#extras">Extras</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Hello there 👋</span>
+            <h1 class="hero-title">Adam Östberg</h1>
+            <p class="lead">
+              Third-year Media Technology student at KTH Royal Institute of
+              Technology, combining a technical background in AI/ML with a
+              creative approach to web and UX design. I love the challenge of
+              making technology feel effortless and human.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#contact">Contact me</a>
+              <a
+                class="btn"
+                href="assets/CV-AdamOstberg.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <figure class="hero-portrait">
+            <div class="portrait-frame">
+              <img
+                src="assets/adam.jpg"
+                alt="Adam Östberg with Tokyo in the background"
+              />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </header>
+
     <main>
-        <h1>Adam Östberg</h1>
-        <p>Under construction...</p>
-        <p>ETA: 1 day - 1 decade</p>
-        <p>UPDATE! As of 12/07-2024 this website is online at adamostberg.com</p>
+      <section id="about" data-label="Section 01">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p class="section-intro">
+                I'm a third-year Media Technology student at KTH Royal Institute
+                of Technology with a focus on AI development, web technologies,
+                and user experience. My main interest lies in building digital
+                tools and systems that are both technically sound and
+                thoughtfully designed. I enjoy exploring how AI/ML and
+                thoughtful design can work together to create products that
+                genuinely improve how people interact with technology.
+              </p>
+              <p class="section-intro">
+                In addition to my technical studies, I have a strong interest in
+                business and economics. I find that understanding how products
+                fit into broader market and organizational contexts adds an
+                important dimension to development work. It helps me think not
+                only about what to build, but also why it should be built and
+                how design and technology decisions shape real-world outcomes.
+              </p>
+            </div>
+            <aside class="quick-facts" aria-label="Quick facts">
+              <h3>Quick Facts</h3>
+              <ul class="facts-grid">
+                <li class="fact-card">
+                  <span class="fact-label">🎯 Current Goal</span>
+                  <span class="fact-value"
+                    >Internship in a tech/finance related field.</span
+                  >
+                </li>
+                <li class="fact-card">
+                  <span class="fact-label">📕 Current Focus</span>
+                  <span class="fact-value">Machine Learning & Applied AI</span>
+                </li>
+                <li class="fact-card">
+                  <span class="fact-label">💬 In teams i bring</span>
+                  <span class="fact-value">
+                    Srong communication and collaboration in every project.
+                  </span>
+                </li>
+                <li class="fact-card">
+                  <span class="fact-label">🌍 Based In</span>
+                  <span class="fact-value">Stockholm, Sweden</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" data-label="Section 02">
+        <div class="container">
+          <h2>Tech Stack & Toolkit ⚙️</h2>
+          <p class="section-intro">
+            A curated mix of languages, frameworks and tools that help me in
+            development. Each one is something I've used in hobby or academic
+            projects.
+          </p>
+          <div class="grid-two">
+            <div class="skills-group">
+              <h3>Languages</h3>
+              <ul>
+                <li>TypeScript / JavaScript</li>
+                <li>Python (data, scripting, ML)</li>
+                <li>C# (interactive media, Unity)</li>
+                <li>C++ (familiar with core syntax and concepts)</li>
+                <li>SQL (databases)</li>
+              </ul>
+            </div>
+            <div class="skills-group">
+              <h3>Frameworks / Libraries</h3>
+              <ul>
+                <li>React, Next.js</li>
+                <li>NumPy, Matplotlib, Tkinter, scikit-learn</li>
+                <li>Arduino, Raspberry Pi for embedded builds</li>
+              </ul>
+            </div>
+            <div class="skills-group">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git, GitHub</li>
+                <li>Figma, Adobe Suite, Blender, Final Cut</li>
+                <li>Firebase</li>
+                <li>Unity, Jupyter Notebooks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" data-label="Section 03">
+        <div class="container">
+          <h2>Experience Highlights</h2>
+          <p class="section-intro">
+            Experiences where I grew through collaboration and real
+            responsibility.
+          </p>
+          <div class="experience">
+            <article class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role"
+                  >Co-directing of a student short film</span
+                >
+                <span class="experience-meta">2025-2026 · KTH</span>
+              </div>
+              <ul>
+                <li>
+                  Co-directing a year-long student short film at KTH, involving
+                  a large multidisciplinary team.
+                </li>
+                <li>
+                  This experience is sharpening my leadership, communication and
+                  project organization abilities.
+                </li>
+              </ul>
+            </article>
+            <article class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Prospecting / Prebona AB</span>
+                <span class="experience-meta">June 2023 · Lisbon</span>
+              </div>
+              <ul>
+                <li>
+                  Led B2B prospecting and lead generation efforts while growing
+                  communication and teamwork skills during summer.
+                </li>
+                <li>
+                  Partnered with a senior salesperson to refine client targeting
+                  strategies that improved conversion quality.
+                </li>
+              </ul>
+            </article>
+            <article class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Postman / City Mail</span>
+                <span class="experience-meta">2022 - 2023 · Stockholm</span>
+              </div>
+              <ul>
+                <li>
+                  Delivered under tight deadlines, building resilience in
+                  stressful, time-sensitive environments.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" data-label="Section 04">
+        <div class="container">
+          <h2>Selected Projects 💻</h2>
+          <p class="section-intro">
+            A few builds that showcase how I approach engineering problems. From
+            idea, to prototype, to polished delivery.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-meta">Machine Learning · 2024</span>
+              <h3>Dropout Prediction</h3>
+              <p>
+                Implemented and tuned an XGBoost classifier to predict student
+                dropout risk using Python, scikit-learn and targeted feature
+                engineering. Running cross-validation and hyperparameter
+                searches to raise F1 scores while documenting insights.
+              </p>
+              <div class="tag-list">
+                <span class="tag">ML</span>
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">NumPy</span>
+              </div>
+              <a href="" target="_blank" rel="noopener noreferrer"
+                >Learn more ↗</a
+              >
+            </article>
+            <article class="project-card">
+              <span class="project-meta">Kategori · år</span>
+              <h3>Nån titel</h3>
+              <p>bla bla bla</p>
+              <div class="tag-list">
+              </div>
+              <a href="" target="_blank" rel="noopener noreferrer"
+                >View project ↗</a
+              >
+            </article>
+            <article class="project-card">
+              <span class="project-meta">Kategori · år</span>
+              <h3>En till titel</h3>
+              <p>mer bla bla bla</p>
+              <div class="tag-list">
+              </div>
+              <a href="" target="_blank" rel="noopener noreferrer"
+                >View project ↗</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="extras" data-label="Section 05">
+        <div class="container">
+          <h2>Beyond The Code</h2>
+          <p class="section-intro">
+            Some more information about me that isn't just code related.
+          </p>
+          <div class="extras-grid">
+            <article class="extra-card">
+              <h3>Coursework Spotlight</h3>
+              <ul>
+                <li>Applied Computer Science</li>
+                <li>Machine Learning</li>
+                <li>Interaction Programming & Human-computer Interaction</li>
+                <li>Sensor Programming</li>
+                <li>Entrepreneurship & Industrial Management</li>
+              </ul>
+            </article>
+            <article class="extra-card">
+              <h3>Freetime (Besides coding)</h3>
+              <ul>
+                <li>Regular at the gym and enjoy staying active.</li>
+                <li>
+                  I love activities in the mountains like skiing, mountain
+                  biking and hiking.
+                </li>
+                <li>
+                  Value being spontaneous and exploring new things with friends.
+                </li>
+                <li>Interested in cars and the joy of driving.</li>
+              </ul>
+            </article>
+            <article class="extra-card">
+              <h3>Some things I am good at besides coding</h3>
+              <ul>
+                <li>
+                  I really enjoy marketing and selling, talking infront of
+                  groups of people.
+                </li>
+                <li>
+                  Working in groups and organizing larger projects - Currently I
+                  am co-directing a larger short film.
+                </li>
+                <li>
+                  Trying to really understanding business and how to create real
+                  value with a smart business model.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-label="Section 06">
+        <div class="container">
+          <h2>Let's Connect 🤝</h2>
+          <div class="contact-card">
+            <p>
+              I'm looking for opportunities where I can contribute to
+              product-minded engineering teams and learn from experienced
+              mentors. If that sounds interesting, let's talk!
+            </p>
+            <div class="contact-lines">
+              <div>
+                <span>Email</span>
+                <a href="mailto:adam@adamostberg.com">adam@adamostberg.com</a>
+              </div>
+              <div>
+                <span>LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/adam-%C3%B6stberg-63a009263/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.linkedin.com/in/adam-%C3%B6stberg-63a009263/
+                </a>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <a
+                  href="https://github.com/NightParticle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://github.com/NightParticle
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer>
+      <div class="container">
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Adam Östberg · In collaboration with a lot of coffe
+      </div>
+    </footer>
+  </body>
 </html>
