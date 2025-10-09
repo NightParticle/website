@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav id="site-nav">
       <div class="container nav-inner">
         <div class="brand">
           <strong>Adam Östberg</strong>
         </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -246,8 +251,7 @@
               <span class="project-meta">Kategori · år</span>
               <h3>Nån titel</h3>
               <p>bla bla bla</p>
-              <div class="tag-list">
-              </div>
+              <div class="tag-list"></div>
               <a href="" target="_blank" rel="noopener noreferrer"
                 >View project ↗</a
               >
@@ -256,8 +260,7 @@
               <span class="project-meta">Kategori · år</span>
               <h3>En till titel</h3>
               <p>mer bla bla bla</p>
-              <div class="tag-list">
-              </div>
+              <div class="tag-list"></div>
               <a href="" target="_blank" rel="noopener noreferrer"
                 >View project ↗</a
               >
@@ -342,22 +345,11 @@
                   https://www.linkedin.com/in/adam-%C3%B6stberg-63a009263/
                 </a>
               </div>
-              <div>
-                <span>GitHub</span>
-                <a
-                  href="https://github.com/NightParticle"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://github.com/NightParticle
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="container">
         ©
@@ -367,5 +359,24 @@
         Adam Östberg · In collaboration with a lot of coffe
       </div>
     </footer>
+    <script>
+      (function () {
+        const nav = document.getElementById("site-nav");
+        if (!nav) return;
+        const toggle = nav.querySelector(".nav-toggle");
+        const links = nav.querySelectorAll(".nav-links a");
+        if (!toggle) return;
+        toggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
